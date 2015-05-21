@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_above="@+id/card_view_asset_create"
+    android:fadeScrollbars="false"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context="com.autodesk.spark.sdk.example.MainActivity">
+
+       <include layout="@layout/view_register_printer"/>
+
+       <include layout="@layout/view_create_job"/>
+
+       <include layout="@layout/view_send_command"/>
+
+       <include layout="@layout/view_unregsiter_printer"/>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

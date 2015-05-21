@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:radius="4dp"
+        app:fillColor="#FF000000"
+        app:pageColor="#FFAAAAAA"
+        app:strokeColor="#FF000000"
+        app:strokeWidth="0dp"
+        />
+
+    <TextView
+        android:id="@+id/text_drive_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/FieldLabel"
+        android:text="TEXT"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/indicator"
+        android:textColor="@android:color/black"
+        />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_drive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_drive_label"
+        tools:context=".MainActivity" />
+
+
+</RelativeLayout>
+

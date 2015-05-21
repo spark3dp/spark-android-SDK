@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">SparkSDK</string>
+    <string name="SPARK_API_KEY">[APP KEY]</string>
+    <string name="SPARK_API_SECRET">[SECRET KEY]</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_selection_main">Spark SDK Examples</string>
+    <string name="action_settings">Settings</string>
+    <string name="empty_string">-EMPTY-</string>
+    <string name="grant_guest_token">Grant Guest Token</string>
+    <string name="grant_access_token">Grant Access Token</string>
+    <string name="get_asset">Get Asset</string>
+    <string name="get_assets">Get Assets</string>
+    <string name="get_member_assets">Get Member Assets</string>
+    <string name="get_member">Get Member</string>
+    <string name="get_current_member">Get Current Member</string>
+    <string name="create_asset">Create Asset</string>
+    <string name="create_file">Create File</string>
+    <string name="select_file">Select File</string>
+    <string name="printer_registration_code">Get Registration Code</string>
+    <string name="printer_register">Register Printer</string>
+    <string name="printer_unregister">Unregister Printer</string>
+    <string name="printer_create_job">Create Job</string>
+    <string name="printer_command_send_resume">Resume</string>
+    <string name="printer_command_send_pause">Pause</string>
+    <string name="printer_command_send_cancel">Cancel</string>
+
+    <string name="title_section1">Authentication</string>
+    <string name="title_section2">Drive</string>
+    <string name="title_section3">Prnter</string>
+
+    <string name="drive_title_section1">General</string>
+    <string name="drive_title_section2">Create Asset</string>
+    <string name="drive_title_section3">Create File</string>
+
+
+
+</resources>

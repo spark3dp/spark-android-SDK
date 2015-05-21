@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white_light">#ffffffff</color>
+    <color name="white_gray">#ffaaaaaa</color>
+    <color name="spark_color_light">#aaeb9c26</color>
+    <color name="spark_color">#ffeb9c26</color>
+
+</resources>

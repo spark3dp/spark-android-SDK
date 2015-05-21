@@ -1,0 +1,58 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        style="@style/FieldLinearVertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            style="@style/FieldLinear">
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="Printer ID : "
+                />
+
+            <EditText
+                android:id="@+id/edit_printer_id2"
+                style="@style/FieldValue"
+                android:hint="Printer ID"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/button_create_job"
+            style="@style/SampleButton"
+            android:layout_height="50dp"
+            android:text="@string/printer_create_job" />
+
+        <ProgressBar
+            android:id="@+id/job_progress"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            />
+
+        <EditText
+            android:id="@+id/text_create_job_result"
+            style="@style/SampleEditText"
+            android:text=""
+            android:hint="Result"
+            android:background="@android:color/transparent"
+            />
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
