@@ -3,7 +3,7 @@
 This open-source SDK library enables you to easily integrate the Spark 3D printing API into your Android applications. 
 Spark APIs are web based RESTful APIs providing an open, free and complete toolkit of professional-grade resources for 3D printing and related manufacturing processes. 
 
-For more information about Spark see the developers’ portal and the documentation home page.
+For more information about Spark see the [developers’ portal](https://spark.autodesk.com/developers/) and the [documentation home page](https://spark.autodesk.com/developers/reference/).
 
 ##Getting Started
 
@@ -11,7 +11,7 @@ Download the Spark Android SDK library (from?) and import the library into your 
 
 The Spark Android SDK comes with a sample app, located in the library’s App folder.
 
-To use the Spark Android SDK you must first add an app on the Spark Developer’s Portal and save the allocated app key and app secret. For more information see the tutorial.
+To use the Spark Android SDK you must first add an app on the [Spark Developer’s Portal](https://spark.autodesk.com/developers/myApps) and save the allocated app key and app secret. For more information see [the tutorial](https://spark.autodesk.com/developers/reference/introduction/tutorials/register-an-app).
 
 ##Setting Up the SDK
 
