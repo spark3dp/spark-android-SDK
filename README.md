@@ -18,11 +18,13 @@ To use the Spark Android SDK you must first add an app on the [Spark Developer�
 ##1. Initialization
 
 Call the init method passing the app key and app secret allocated by the [developer portal](https://spark.autodesk.com/developers/myApps):
-
-<code>Spark.init(this, [APPKEY], [APPSECRET]);</code>
-
+```JavaScript
+Spark.init(this, [APPKEY], [APPSECRET]);</code>
+```
 Enable debug mode to see logcat messages regarding your configuration and any error messages or notifications.<br>
-<code>Spark.setDebugMode(true);</code>
+```JavaScript
+Spark.setDebugMode(true);
+```
 
 ##2. Authentication
 
@@ -33,7 +35,8 @@ There are two types of authentication available:<br>
 
 ###2.1 Generate a Guest Token
 
-<code>SparkAuthentication.getGuestToken(new ISparkResponse<AccessTokenResponse>() {
+```JavaScript
+       SparkAuthentication.getGuestToken(new ISparkResponse<AccessTokenResponse>() {
             @Override
             public void onSparkSuccess(AccessTokenResponse responseObject) {
                 ((EditText) 
@@ -47,11 +50,12 @@ There are two types of authentication available:<br>
 			// Failure
 // check error message
             }
-        });</code>
+        });
+        ```
 
 ###2.2  Get Access Token
-
-<code>SparkAuthentication.getAuthorizationCode(getActivity(),new ISparkResponse<AccessTokenResponse>() {
+```JavaScript
+       SparkAuthentication.getAuthorizationCode(getActivity(),new ISparkResponse<AccessTokenResponse>() {
             @Override
             public void onSparkSuccess(AccessTokenResponse responseObject) {
 // Success !
@@ -66,12 +70,13 @@ There are two types of authentication available:<br>
                     
 }
 
-        });</code>
+        });
+        ```
 
 ##3. Spark API Call Example
 
 ###3.1 Get Asset by ID
-<code>
+```JavaScript
 SparkDrive.getAsset(new AssetRequest([ASSET_ID]), new ISparkResponse<AssetResponse>() {<br>
 
             @Override<br>
@@ -85,35 +90,38 @@ SparkDrive.getAsset(new AssetRequest([ASSET_ID]), new ISparkResponse<AssetRespon
 
                           }<br>
         });<br>
-</code>
+```
 ##4. List of the Spark API Available in the SDK
 
 ###4.1 Authentication API
-
-<code>SparkAuthentication.getGuestToken(...);<br>
-      SparkAuthentication.getAuthorizationCode(..);</code>
-
+```JavaScript
+      SparkAuthentication.getGuestToken(...); 
+      SparkAuthentication.getAuthorizationCode(..); 
+```
 The Authentication API authenticates users and apps and provides access to the other API. The API’s documentation: https://spark.autodesk.com/developers/reference/authentication
 
 ###4.2 Drive API
-<code>     SparkDrive.createAsset(...);<br>
-     SparkDrive.createFile(...);<br>
-     SparkDrive.getAsset(...);<br>
-     SparkDrive.getMemberAssets(...);<br>
-     SparkDrive.getCurrentMember(...);<br>
-     SparkDrive.getAssets(...);<br>
-     SparkDrive.getMember(...);</code>
+```JavaScript     
+     SparkDrive.createAsset(...); 
+     SparkDrive.createFile(...); 
+     SparkDrive.getAsset(...); 
+     SparkDrive.getMemberAssets(...); 
+     SparkDrive.getCurrentMember(...); 
+     SparkDrive.getAssets(...); 
+     SparkDrive.getMember(...); 
+     ```
 
 The Drive API is used to store files and 3D models, to get access to other Spark members , upload files for printing, “like”, “favorite” and attach comments to models. 
 API Documentation: https://spark.autodesk.com/developers/reference/drive
 
 ###4.3 Printer API
-
-<code> SparkPrint.createJob(...);<br>
-       SparkPrint.jobStatus(...);<br>
-       SparkPrint.commandSend(...);<br>
-       SparkPrint.registerPrinter(...);<br>
-       SparkPrint.unregisterPrinter(...);</code>
+```JavaScript
+       SparkPrint.createJob(...); 
+       SparkPrint.jobStatus(...); 
+       SparkPrint.commandSend(...); 
+       SparkPrint.registerPrinter(...); 
+       SparkPrint.unregisterPrinter(...);
+       ```
 
 Spark Print API heal and prepare 3D models for printing, register 3D printers for use, send commands and 3D printer job to 3D printers and monitor progress.
 API Documentation: https://spark.autodesk.com/developers/reference/print 
