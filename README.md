@@ -71,37 +71,37 @@ There are two types of authentication available:<br>
 ##3. Spark API Call Example
 
 ###3.1 Get Asset by ID
+<code>
+SparkDrive.getAsset(new AssetRequest([ASSET_ID]), new ISparkResponse<AssetResponse>() {<br>
 
-SparkDrive.getAsset(new AssetRequest([ASSET_ID]), new ISparkResponse<AssetResponse>() {
-
-            @Override
-            public void onSparkSuccess(AssetResponse responseObject) {
-
-
-            }
-            @Override
-            public void onSparkFailure(String errorMessage) {
+            @Override<br>
+            public void onSparkSuccess(AssetResponse responseObject) {<br>
 
 
-                          }
-        });
+            }<br>
+            @Override<br>
+            public void onSparkFailure(String errorMessage) {<br>
 
+
+                          }<br>
+        });<br>
+</code>
 ##4. List of the Spark API Available in the SDK
 
 ###4.1 Authentication API
 
-	SparkAuthentication.getGuestToken(...);
-     SparkAuthentication.getAuthorizationCode(..);
+<code>SparkAuthentication.getGuestToken(...);<br>
+      SparkAuthentication.getAuthorizationCode(..);</code>
 
 The Authentication API authenticates users and apps and provides access to the other API. The API’s documentation: https://spark.autodesk.com/developers/reference/authentication
 
 ###4.2 Drive API
-<code>     SparkDrive.createAsset(...);
-     SparkDrive.createFile(...);
-     SparkDrive.getAsset(...);
-     SparkDrive.getMemberAssets(...);
-     SparkDrive.getCurrentMember(...);
-     SparkDrive.getAssets(...);
+<code>     SparkDrive.createAsset(...);<br>
+     SparkDrive.createFile(...);<br>
+     SparkDrive.getAsset(...);<br>
+     SparkDrive.getMemberAssets(...);<br>
+     SparkDrive.getCurrentMember(...);<br>
+     SparkDrive.getAssets(...);<br>
      SparkDrive.getMember(...);</code>
 
 The Drive API is used to store files and 3D models, to get access to other Spark members , upload files for printing, “like”, “favorite” and attach comments to models. 
@@ -109,10 +109,10 @@ API Documentation: https://spark.autodesk.com/developers/reference/drive
 
 ###4.3 Printer API
 
-<code>	  SparkPrint.createJob(...);
-       SparkPrint.jobStatus(...);
-       SparkPrint.commandSend(...);
-       SparkPrint.registerPrinter(...);
+<code> SparkPrint.createJob(...);<br>
+       SparkPrint.jobStatus(...);<br>
+       SparkPrint.commandSend(...);<br>
+       SparkPrint.registerPrinter(...);<br>
        SparkPrint.unregisterPrinter(...);</code>
 
 Spark Print API heal and prepare 3D models for printing, register 3D printers for use, send commands and 3D printer job to 3D printers and monitor progress.
