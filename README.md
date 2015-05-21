@@ -51,7 +51,7 @@ There are two types of authentication available:<br>
 // check error message
             }
         });
-        ```
+```
 
 ###2.2  Get Access Token
 ```JavaScript
@@ -71,7 +71,7 @@ There are two types of authentication available:<br>
 }
 
         });
-        ```
+```
 
 ##3. Spark API Call Example
 
@@ -109,7 +109,7 @@ The Authentication API authenticates users and apps and provides access to the o
      SparkDrive.getCurrentMember(...); 
      SparkDrive.getAssets(...); 
      SparkDrive.getMember(...); 
-     ```
+```
 
 The Drive API is used to store files and 3D models, to get access to other Spark members , upload files for printing, “like”, “favorite” and attach comments to models. 
 API Documentation: https://spark.autodesk.com/developers/reference/drive
@@ -121,7 +121,7 @@ API Documentation: https://spark.autodesk.com/developers/reference/drive
        SparkPrint.commandSend(...); 
        SparkPrint.registerPrinter(...); 
        SparkPrint.unregisterPrinter(...);
-       ```
+```
 
 Spark Print API heal and prepare 3D models for printing, register 3D printers for use, send commands and 3D printer job to 3D printers and monitor progress.
 API Documentation: https://spark.autodesk.com/developers/reference/print 
