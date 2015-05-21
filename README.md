@@ -59,7 +59,7 @@ There are two types of authentication available:<br>
             @Override
             public void onSparkSuccess(AccessTokenResponse responseObject) {
             // Success !
-	    // Call Spark API
+	      // Call Spark API
            }
             @Override
             public void onSparkFailure(String errorMessage) {
