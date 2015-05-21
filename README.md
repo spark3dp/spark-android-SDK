@@ -41,14 +41,14 @@ There are two types of authentication available:<br>
             public void onSparkSuccess(AccessTokenResponse responseObject) {
                 ((EditText) 
 			
-			// Success !
-			// Call Spark API
+                // Success !
+		// Call Spark API
             }
 
             @Override
             public void onSparkFailure(String errorMessage) {
-			// Failure
-                        // check error message
+		// Failure
+                // Check error message
             }
         });
 ```
@@ -58,13 +58,13 @@ There are two types of authentication available:<br>
        SparkAuthentication.getAuthorizationCode(getActivity(),new ISparkResponse<AccessTokenResponse>() {
             @Override
             public void onSparkSuccess(AccessTokenResponse responseObject) {
-                        // Success !
-			// Call Spark API
+                // Success !
+	        // Call Spark API
            }
             @Override
             public void onSparkFailure(String errorMessage) {
-       			// Failure
-                       // check error message
+       		// Failure
+                // Check error message
             }
             });
 ```
