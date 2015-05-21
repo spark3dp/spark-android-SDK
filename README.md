@@ -19,7 +19,7 @@ To use the Spark Android SDK you must first add an app on the [Spark Developerâ€
 
 Call the init method passing the app key and app secret allocated by the [developer portal](https://spark.autodesk.com/developers/myApps):
 ```JavaScript
-Spark.init(this, [APPKEY], [APPSECRET]);
+Spark.init(this, [APPKEY], [APPSECRET],[ENV_TYPE]);
 ```
 Enable debug mode to see logcat messages regarding your configuration and any error messages or notifications.<br>
 ```JavaScript
