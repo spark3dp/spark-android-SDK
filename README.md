@@ -47,7 +47,7 @@ There are two types of authentication available:<br>
 
             @Override
             public void onSparkFailure(String errorMessage) {
-	       // Failure
+	        // Failure
             // Check error message
             }
         });
