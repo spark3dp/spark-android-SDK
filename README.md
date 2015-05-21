@@ -19,7 +19,7 @@ To use the Spark Android SDK you must first add an app on the [Spark Developer�
 
 Call the init method passing the app key and app secret allocated by the [developer portal](https://spark.autodesk.com/developers/myApps):
 ```JavaScript
-Spark.init(this, [APPKEY], [APPSECRET]);</code>
+Spark.init(this, [APPKEY], [APPSECRET]);
 ```
 Enable debug mode to see logcat messages regarding your configuration and any error messages or notifications.<br>
 ```JavaScript
@@ -48,7 +48,7 @@ There are two types of authentication available:<br>
             @Override
             public void onSparkFailure(String errorMessage) {
 			// Failure
-// check error message
+                        // check error message
             }
         });
 ```
@@ -58,19 +58,15 @@ There are two types of authentication available:<br>
        SparkAuthentication.getAuthorizationCode(getActivity(),new ISparkResponse<AccessTokenResponse>() {
             @Override
             public void onSparkSuccess(AccessTokenResponse responseObject) {
-// Success !
+                        // Success !
 			// Call Spark API
-
-
            }
-         @Override
+            @Override
             public void onSparkFailure(String errorMessage) {
        			// Failure
-// check error message
-                    
-}
-
-        });
+                       // check error message
+            }
+            });
 ```
 
 ##3. Spark API Call Example
@@ -79,17 +75,13 @@ There are two types of authentication available:<br>
 ```JavaScript
 SparkDrive.getAsset(new AssetRequest([ASSET_ID]), new ISparkResponse<AssetResponse>() {<br>
 
+            @Override 
+            public void onSparkSuccess(AssetResponse responseObject) { 
+            }
             @Override<br>
-            public void onSparkSuccess(AssetResponse responseObject) {<br>
-
-
-            }<br>
-            @Override<br>
-            public void onSparkFailure(String errorMessage) {<br>
-
-
-                          }<br>
-        });<br>
+            public void onSparkFailure(String errorMessage) { 
+             } 
+             }); 
 ```
 ##4. List of the Spark API Available in the SDK
 
@@ -98,7 +90,8 @@ SparkDrive.getAsset(new AssetRequest([ASSET_ID]), new ISparkResponse<AssetRespon
       SparkAuthentication.getGuestToken(...); 
       SparkAuthentication.getAuthorizationCode(..); 
 ```
-The Authentication API authenticates users and apps and provides access to the other API. The API’s documentation: https://spark.autodesk.com/developers/reference/authentication
+The Authentication API authenticates users and apps and provides access to the other API. 
+Autentication API documentation: https://spark.autodesk.com/developers/reference/authentication.
 
 ###4.2 Drive API
 ```JavaScript     
@@ -112,7 +105,7 @@ The Authentication API authenticates users and apps and provides access to the o
 ```
 
 The Drive API is used to store files and 3D models, to get access to other Spark members , upload files for printing, “like”, “favorite” and attach comments to models. 
-API Documentation: https://spark.autodesk.com/developers/reference/drive
+Drive API Documentation: https://spark.autodesk.com/developers/reference/drive.
 
 ###4.3 Printer API
 ```JavaScript
@@ -124,7 +117,7 @@ API Documentation: https://spark.autodesk.com/developers/reference/drive
 ```
 
 Spark Print API heal and prepare 3D models for printing, register 3D printers for use, send commands and 3D printer job to 3D printers and monitor progress.
-API Documentation: https://spark.autodesk.com/developers/reference/print 
+Print API Documentation: https://spark.autodesk.com/developers/reference/print.
 
 
 ##Feedback
