@@ -41,8 +41,8 @@ There are two types of authentication available:<br>
             public void onSparkSuccess(AccessTokenResponse responseObject) {
                 ((EditText) 
 			
-                // Success !
-		// Call Spark API
+             // Success !
+             // Call Spark API
             }
 
             @Override
