@@ -1,6 +1,6 @@
 #Spark Android SDK
 
-This open-source SDK library enables you to easily integrate the Spark 3D printing API into your Android applications. 
+This open-source SDK library enables you to easily integrate the Spark 3D printing API into your Android applications.<br>
 Spark APIs are web based RESTful APIs providing an open, free and complete toolkit of professional-grade resources for 3D printing and related manufacturing processes. 
 
 For more information about Spark see the [developers’ portal](https://spark.autodesk.com/developers/) and the [documentation home page](https://spark.autodesk.com/developers/reference/).
@@ -26,14 +26,14 @@ Enable debug mode to see logcat messages regarding your configuration and any er
 
 ##2. Authentication
 
-Spark API use OAUTH 2.0 authentication. 
-There are two types of authentication available:
-Guest Token - For read only permissions. Gives you access to public data on Spark.
-Access Token - For read\write access to a Spark member’s private data. Access Tokens require the user to log-in from your app.
+Spark API use OAUTH 2.0 authentication.<br>
+There are two types of authentication available:<br>
+* Guest Token - For read only permissions. Gives you access to public data on Spark.
+* Access Token - For read\write access to a Spark member’s private data. Access Tokens require the user to log-in from your app.
 
 ###2.1 Generate a Guest Token
 
-SparkAuthentication.getGuestToken(new ISparkResponse<AccessTokenResponse>() {
+<code>SparkAuthentication.getGuestToken(new ISparkResponse<AccessTokenResponse>() {
             @Override
             public void onSparkSuccess(AccessTokenResponse responseObject) {
                 ((EditText) 
@@ -47,11 +47,11 @@ SparkAuthentication.getGuestToken(new ISparkResponse<AccessTokenResponse>() {
 			// Failure
 // check error message
             }
-        });
+        });</code>
 
 ###2.2  Get Access Token
 
-SparkAuthentication.getAuthorizationCode(getActivity(),new ISparkResponse<AccessTokenResponse>() {
+<code>SparkAuthentication.getAuthorizationCode(getActivity(),new ISparkResponse<AccessTokenResponse>() {
             @Override
             public void onSparkSuccess(AccessTokenResponse responseObject) {
 // Success !
@@ -66,10 +66,7 @@ SparkAuthentication.getAuthorizationCode(getActivity(),new ISparkResponse<Access
                     
 }
 
-        });
-
-
-
+        });</code>
 
 ##3. Spark API Call Example
 
