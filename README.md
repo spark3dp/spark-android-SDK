@@ -47,8 +47,8 @@ There are two types of authentication available:<br>
 
             @Override
             public void onSparkFailure(String errorMessage) {
-		// Failure
-                // Check error message
+	    // Failure
+            // Check error message
             }
         });
 ```
@@ -58,13 +58,13 @@ There are two types of authentication available:<br>
        SparkAuthentication.getAuthorizationCode(getActivity(),new ISparkResponse<AccessTokenResponse>() {
             @Override
             public void onSparkSuccess(AccessTokenResponse responseObject) {
-                // Success !
-	        // Call Spark API
+            // Success !
+	    // Call Spark API
            }
             @Override
             public void onSparkFailure(String errorMessage) {
-       		// Failure
-                // Check error message
+            // Failure
+            // Check error message
             }
             });
 ```
