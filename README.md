@@ -3,7 +3,7 @@
 This open-source SDK library enables you to easily integrate the Spark 3D printing API into your Android applications.<br>
 Spark APIs are web based RESTful APIs providing an open, free and complete toolkit of professional-grade resources for 3D printing and related manufacturing processes. 
 
-For more information about Spark see the [developers’ portal](https://spark.autodesk.com/developers/) and the [documentation home page](https://spark.autodesk.com/developers/reference/).
+Spark APIs are current in beta: [Request access](https://spark.autodesk.com/developers/).
 
 ##Getting Started
 
