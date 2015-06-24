@@ -282,7 +282,7 @@ public class NetworkUtils {
 
         Uri.Builder builder = new Uri.Builder();
         builder.scheme(Constants.SPARK_SCHEME)
-                .authority(Utils.getBaseURL())
+                .authority(Utils.getBaseURLNoScheme())
                 .appendPath(Constants.API_AUTHORIZE)
                 .appendQueryParameter(Constants.SPARK_LOGIN_REQUEST_PARAM_RESPONSE_TYPE, Constants.SPARK_LOGIN_REQUEST_VALUE_RESPONSE_TYPE)
                 .appendQueryParameter(Constants.SPARK_LOGIN_REQUEST_PARAM_CLIENT_ID, MemoryManager.getInstance().getAppKey())

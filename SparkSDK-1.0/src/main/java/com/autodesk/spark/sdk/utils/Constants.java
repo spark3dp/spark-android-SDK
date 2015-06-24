@@ -28,6 +28,9 @@ public class Constants {
     public static final String SPARK_BASE_URL_SANDBOX = SPARK_SCHEME + "://" + SPARK_SANDBOX_AUTHORITY_AND_PATH;
     public static final String SPARK_BASE_URL_PRODUCTION = SPARK_SCHEME + "://" + SPARK_PRODUCTION_AUTHORITY_AND_PATH;
 
+    public static final String SPARK_BASE_URL_SANDBOX_NO_SCHEME = SPARK_SANDBOX_AUTHORITY_AND_PATH;
+    public static final String SPARK_BASE_URL_PRODUCTION_NO_SCHEME = SPARK_PRODUCTION_AUTHORITY_AND_PATH;
+
     // API CALLS
     public final static String API_PRINTER_PID = "{{PID}}";
     public final static String API_MEMBER_MID = "{{MID}}";

@@ -31,6 +31,14 @@ public class Utils {
                                                                 Constants.SPARK_BASE_URL_PRODUCTION;
     }
 
+    public static String getBaseURLNoScheme()
+    {
+        return (MemoryManager.getInstance().geBaseURLType() == Constants.SPARK_ENV_TYPE_SANBOX) ?
+                Constants.SPARK_BASE_URL_SANDBOX_NO_SCHEME :
+                Constants.SPARK_BASE_URL_PRODUCTION_NO_SCHEME;
+    }
+
+
     public static boolean needToUpdateAccessToken()
     {
 
