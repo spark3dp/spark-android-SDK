@@ -3,15 +3,15 @@
 This open-source SDK library enables you to easily integrate the Spark 3D printing API into your Android applications.<br>
 Spark APIs are web based RESTful APIs providing an open, free and complete toolkit of professional-grade resources for 3D printing and related manufacturing processes. 
 
-For more information about Spark see the [developers’ portal](https://spark.autodesk.com/developers/) and the [documentation home page](https://spark.autodesk.com/developers/reference/).
+<b>Spark APIs are current in beta: [Request access](https://spark.autodesk.com/developers/).</b>
 
 ##Getting Started
 
-Download the Spark Android SDK library (from?) and import the library into your project.
+Download this repository and import it into your project.
 
 The Spark Android SDK comes with a sample app, located in the library’s App folder.
 
-To use the Spark Android SDK you must first add an app on the [Spark Developer’s Portal](https://spark.autodesk.com/developers/myApps) and save the allocated app key and app secret. For more information see [the tutorial](https://spark.autodesk.com/developers/reference/introduction/tutorials/register-an-app).
+To use the Spark Android SDK you must first <i>add an app</i> on the [Spark Developer’s Portal](https://spark.autodesk.com/developers/myApps) and save the app key and app secret Spark generates. For more information see [the tutorial](https://spark.autodesk.com/developers/reference/introduction/tutorials/register-an-app).
 
 ##Setting Up the SDK
 
@@ -31,7 +31,7 @@ Spark.setDebugMode(true);
 Spark API use OAUTH 2.0 authentication.<br>
 There are two types of authentication available:<br>
 * Guest Token - For read only permissions. Gives you access to public data on Spark.
-* Access Token - For read\write access to a Spark member’s private data. Access Tokens require the user to log-in from your app.
+* Access Token - For read\write access to a Spark member’s private data. Access Tokens log the user in from your app.
 
 ###2.1 Generate a Guest Token
 
@@ -90,7 +90,7 @@ SparkDrive.getAsset(new AssetRequest([ASSET_ID]), new ISparkResponse<AssetRespon
       SparkAuthentication.getGuestToken(...); 
       SparkAuthentication.getAuthorizationCode(..); 
 ```
-The Authentication API authenticates users and apps and provides access to the other API. 
+The Authentication API authenticates users and apps and provides access to the Spark API. 
 Autentication API documentation: https://spark.autodesk.com/developers/reference/authentication.
 
 ###4.2 Drive API
@@ -104,7 +104,7 @@ Autentication API documentation: https://spark.autodesk.com/developers/reference
      SparkDrive.getMember(...); 
 ```
 
-The Drive API is used to store files and 3D models, to get access to other Spark members , upload files for printing, “like”, “favorite” and attach comments to models. 
+The Drive API stores 3D models and their files, uploads files for printing, provides social network services such as “like” of members, “favorite” models and attaches comments to models. 
 Drive API Documentation: https://spark.autodesk.com/developers/reference/drive.
 
 ###4.3 Printer API
@@ -116,7 +116,7 @@ Drive API Documentation: https://spark.autodesk.com/developers/reference/drive.
        SparkPrint.unregisterPrinter(...);
 ```
 
-Spark Print API heal and prepare 3D models for printing, register 3D printers for use, send commands and 3D printer job to 3D printers and monitor progress.
+Spark Print API heals and prepares 3D models for printing, registers 3D printers for use, sends commands and 3D print jobs to 3D printers and monitors printer progress.
 Print API Documentation: https://spark.autodesk.com/developers/reference/print.
 
 
