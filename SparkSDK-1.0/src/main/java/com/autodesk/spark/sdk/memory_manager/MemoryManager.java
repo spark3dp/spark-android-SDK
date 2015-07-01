@@ -170,7 +170,7 @@ public class MemoryManager {
         String textToEncode = mAppKey + ":" + mAppSecret;
         try {
             byte[] data = textToEncode.getBytes("UTF-8");
-            mAppKeySecretBase64 = Base64.encodeToString(data, Base64.DEFAULT);
+            mAppKeySecretBase64 = Base64.encodeToString(data, Base64.NO_WRAP);
 
             Log.d(TAG, String.format("Spark Config BASE64 : %s", mAppKeySecretBase64));
 

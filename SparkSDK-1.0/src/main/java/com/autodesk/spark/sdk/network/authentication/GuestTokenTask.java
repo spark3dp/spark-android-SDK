@@ -1,5 +1,6 @@
 package com.autodesk.spark.sdk.network.authentication;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.toolbox.StringRequest;
 
@@ -33,19 +34,15 @@ public class GuestTokenTask extends BaseSparkRequest<AccessTokenResponse> {
             @Override
             public byte[] getBody() {
 
-                String httpPostBody = "grant_type=client_credentials&client_id=" + MemoryManager.getInstance().getAppKey() +
-                                     "&client_secret=" + MemoryManager.getInstance().getAppSecret();
-
+                String httpPostBody = "grant_type=client_credentials";
 
                 return httpPostBody.getBytes();
             }
 
             @Override
-            protected Map<String, String> getParams()  {
+            public Map<String, String> getHeaders() throws AuthFailureError {
                 return getBasicHeaders();
-
             }
-
         };
 
 

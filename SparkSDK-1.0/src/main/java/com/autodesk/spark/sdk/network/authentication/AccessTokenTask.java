@@ -35,8 +35,7 @@ public class AccessTokenTask extends BaseSparkRequest<AccessTokenResponse> {
             @Override
             public byte[] getBody() {
 
-                String httpPostBody = "grant_type=authorization_code&code=" + code.authCode + "&response_type=code&redirect_uri=" + Constants.SPARK_BOGUS_REDIRECT_URL +
-                                        "&client_secret=" + MemoryManager.getInstance().getAppSecret();
+                String httpPostBody = "grant_type=authorization_code&code=" + code.authCode + "&response_type=code&redirect_uri=" + Constants.SPARK_BOGUS_REDIRECT_URL;
 
                 return httpPostBody.getBytes();
             }
