@@ -11,7 +11,7 @@ Download this repository and import it into your project.
 
 The Spark Android SDK comes with a sample app, located in the library’s App folder.
 
-To use the Spark Android SDK you must first <i>add an app</i> on the [Spark Developer’s Portal](https://spark.autodesk.com/developers/myApps) and save the app key and app secret Spark generates. For more information see [the tutorial](https://spark.autodesk.com/developers/reference/introduction/tutorials/register-an-app).
+To use the Spark Android SDK you must first <i>add an app</i> on the [Spark Developer’s Portal](https://spark.autodesk.com/developers/myApps) and save the app key and app secret Spark generates. For more information see [the tutorial](https://spark.autodesk.com/developers/reference/software-developers/tutorials/register-an-app).
 
 ##Setting Up the SDK
 
@@ -122,4 +122,4 @@ Print API Documentation: https://spark.autodesk.com/developers/reference/print.
 
 ##Feedback
 
-Please report bugs or issues to Spark Support at https://spark.autodesk.com/developers/inbox or simply let us know what you think of the SDK.
+Please report bugs or issues to Spark Support at https://spark.autodesk.com/developers/support/inbox or simply let us know what you think of the SDK.
