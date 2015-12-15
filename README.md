@@ -91,7 +91,7 @@ SparkDrive.getAsset(new AssetRequest([ASSET_ID]), new ISparkResponse<AssetRespon
       SparkAuthentication.getAuthorizationCode(..); 
 ```
 The Authentication API authenticates users and apps and provides access to the Spark API. 
-Autentication API documentation: https://spark.autodesk.com/developers/reference/authentication.
+Autentication API documentation: https://spark.autodesk.com/developers/reference/api/authentication.
 
 ###4.2 Drive API
 ```JavaScript     
@@ -105,7 +105,7 @@ Autentication API documentation: https://spark.autodesk.com/developers/reference
 ```
 
 The Drive API stores 3D models and their files, uploads files for printing, provides social network services such as “like” of members, “favorite” models and attaches comments to models. 
-Drive API Documentation: https://spark.autodesk.com/developers/reference/drive.
+Drive API Documentation: https://spark.autodesk.com/developers/reference/api/drive.
 
 ###4.3 Printer API
 ```JavaScript
@@ -117,7 +117,7 @@ Drive API Documentation: https://spark.autodesk.com/developers/reference/drive.
 ```
 
 Spark Print API heals and prepares 3D models for printing, registers 3D printers for use, sends commands and 3D print jobs to 3D printers and monitors printer progress.
-Print API Documentation: https://spark.autodesk.com/developers/reference/print.
+Print API Documentation: https://spark.autodesk.com/developers/reference/api/print.
 
 
 ##Feedback
